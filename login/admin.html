@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin Dashboard</title>
+    <link rel="stylesheet" href="admin.css">
+</head>
+<body>
+    <div class="admin-container">
+        <header>
+            <h1>Admin Dashboard</h1>
+            <div class="admin-controls">
+                <span id="admin-email"></span>
+                <button id="back-to-profile">Back to Profile</button>
+                <button id="export-data">Export Users Data</button>
+            </div>
+        </header>
+
+        <div id="user-stats" class="stats-container"></div>
+        
+        <div class="admin-panel">
+            <div class="users-section">
+                <h2>User Management</h2>
+                <div class="search-bar">
+                    <input type="text" id="search-users" placeholder="Search users...">
+                </div>
+                <div id="users-container">
+                    <table id="users-table">
+                        <thead>
+                            <tr>
+                                <th>Username</th>
+                                <th>Email</th>
+                                <th>Last Updated</th>
+                                <th>Actions</th>
+                            </tr>
+                        </thead>
+                        <tbody id="users-list"></tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script type="module" src="admin.js"></script>
+</body>
+</html>

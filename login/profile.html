@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>User Profile</title>
+    <link rel="stylesheet" href="profile.css">
+</head>
+<body>
+    <div class="container">
+        <div class="profile-card">
+            <h1>Profile Settings</h1>
+            
+            <div class="user-info">
+                <p>Username: <span id="username-display"></span></p>
+                <p>Email: <span id="email-display"></span></p>
+                <p><span id="last-login"></span></p>
+            </div>
+
+            <form id="profile-form">
+                <div class="form-group">
+                    <label for="username-input">New Username</label>
+                    <input type="text" id="username-input" placeholder="Enter new username">
+                </div>
+
+                <div class="form-group">
+                    <label for="email-input">New Email</label>
+                    <input type="email" id="email-input" placeholder="Enter new email">
+                </div>
+
+                <div class="form-group">
+                    <label for="password-input">New Password</label>
+                    <input type="password" id="password-input" placeholder="Enter new password">
+                </div>
+
+                <button type="submit">Save Changes</button>
+            </form>
+
+            <button id="logout-btn" class="logout-button">Logout</button>
+        </div>
+    </div>
+    <script type="module" src="profile.js"></script>
+</body>
+</html>
